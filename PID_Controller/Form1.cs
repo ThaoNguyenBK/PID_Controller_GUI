@@ -153,6 +153,7 @@ namespace PID_Controller
             }
             data = "%"+ mode_PID + "" + setPoint_SendARM + "e";
             Com.Write(data);
+            timer2.Enabled = true;
         }
         int TickStart, intMode = 1;
 
@@ -172,8 +173,15 @@ namespace PID_Controller
             {
                 rxString = Com.ReadExisting();
                 //this.Invoke(new EventHandler(displayText));
-
-                  Display(rxString);
+                if(rxString=="A")
+                {
+                    timer2.Enabled = false;
+                }
+                else
+                {
+                    Display(rxString);
+                }
+                  
             }
             catch (Exception) { }
 
@@ -229,8 +237,10 @@ namespace PID_Controller
 
 
         private void btnIncrease_Click(object sender, EventArgs e)
-        {        
-            Com.Write("%"+"I" + "e");
+        {
+            data = "%" + "I" + "e";
+            Com.Write(data);
+            timer2.Enabled = true;
             //   btnStart_Clicked(sender, e);
             if (checkBoxSpeed.Checked == true)
             {
@@ -248,7 +258,9 @@ namespace PID_Controller
 
         private void btnDecrease_Click(object sender, EventArgs e)
         {
-            Com.Write("%"+"D" + "e");
+            data = "%" + "D" + "e";
+            Com.Write(data);
+            timer2.Enabled = true;
             //  btnStart_Clicked(sender, e);
             if (checkBoxSpeed.Checked == true)
             {
@@ -274,6 +286,13 @@ namespace PID_Controller
             Thread thrd2 = new Thread(nhanstop);
             thrd2.Start();
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Com.Write(data);
+            timer2.Enabled = true;
+        }
+
         void HamStop()
         {
 
@@ -281,6 +300,7 @@ namespace PID_Controller
             {
                 data ="%"+ "S" + "e";
                 Com.Write(data);
+                timer2.Enabled = true;
             }
             catch (Exception)
             {

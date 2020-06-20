@@ -50,6 +50,7 @@
             this.checkBoxSpeed = new System.Windows.Forms.CheckBox();
             this.checkBoxPosition = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -273,6 +274,11 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Select Mode:";
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,6 +329,7 @@
         private System.Windows.Forms.Button btnIncrease;
         private System.Windows.Forms.Button btnDecrease;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

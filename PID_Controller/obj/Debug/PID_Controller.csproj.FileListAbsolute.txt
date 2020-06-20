@@ -26,3 +26,29 @@ D:\University\Hoc Ki 6\Do an\đk PID\Visual Studio 2017\Project\PID_Controller\P
 D:\University\Hoc Ki 6\Do an\đk PID\Visual Studio 2017\Project\PID_Controller\PID_Controller\obj\Debug\PID_Controller.csproj.CopyComplete
 D:\University\Hoc Ki 6\Do an\đk PID\Visual Studio 2017\Project\PID_Controller\PID_Controller\obj\Debug\PID_Controller.exe
 D:\University\Hoc Ki 6\Do an\đk PID\Visual Studio 2017\Project\PID_Controller\PID_Controller\obj\Debug\PID_Controller.pdb
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\PID_Controller.exe.config
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\PID_Controller.exe
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\PID_Controller.pdb
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\ZedGraph.xml
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\ZedGraph.Web.xml
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\de\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\es\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\fr\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\hu\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\it\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\ja\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\pt\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\ru\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\sk\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\sv\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\tr\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.csprojAssemblyReference.cache
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.Form1.resources
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.Properties.Resources.resources
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.csproj.GenerateResource.cache
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.csproj.CoreCompileInputs.cache
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.csproj.CopyComplete
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.exe
+D:\GITHUB\PID_Controller_GUI\PID_Controller\obj\Debug\PID_Controller.pdb
