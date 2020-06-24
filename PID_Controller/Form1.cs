@@ -19,7 +19,7 @@ namespace PID_Controller
 {
     public partial class Form1 : Form
     {
-        string mode_PID;
+        string mode_PID,Kp,Ki,Kd;
         int setpoint = 0, setpoint_pulseofDeg = 0;
         string setPoint_SendARM = "0";
         string data;
@@ -117,10 +117,10 @@ namespace PID_Controller
 
         private void PbSend_Click(object sender, EventArgs e)
         {
-            Thread thrd1 = new Thread(Send_thrd1);
-            thrd1.Start();
+            Thread thrdSend = new Thread(Send_thrd);
+            thrdSend.Start();
         }
-        void Send_thrd1()
+        void Send_thrd()
         {   
             if (checkBoxSpeed.Checked == true)
             {
@@ -151,7 +151,8 @@ namespace PID_Controller
                     setPoint_SendARM = string.Format("{0:D4}", setpoint_pulseofDeg);
                 }
             }
-            data = "%"+ mode_PID + "" + setPoint_SendARM + "e";
+
+            data = "%"+ mode_PID + "" + setPoint_SendARM +""+txtKp.Text+""+ txtKi.Text+"" +txtKd.Text+ "e";
             Com.Write(data);
             timer2.Enabled = true;
         }
@@ -282,9 +283,9 @@ namespace PID_Controller
         }
         private void btnStop_Click(object sender, EventArgs e)
         {
-            ThreadStart nhanstop = new ThreadStart(HamStop);
-            Thread thrd2 = new Thread(nhanstop);
-            thrd2.Start();
+            ThreadStart stop = new ThreadStart(HamStop);
+            Thread thrdStop = new Thread(stop);
+            thrdStop.Start();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -292,6 +293,8 @@ namespace PID_Controller
             Com.Write(data);
             timer2.Enabled = true;
         }
+
+      
 
         void HamStop()
         {

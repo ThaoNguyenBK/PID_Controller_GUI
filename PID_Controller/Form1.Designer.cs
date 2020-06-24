@@ -42,6 +42,9 @@
             this.PbSend = new System.Windows.Forms.Button();
             this.txtSend = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtKd = new System.Windows.Forms.TextBox();
+            this.txtKi = new System.Windows.Forms.TextBox();
+            this.txtKp = new System.Windows.Forms.TextBox();
             this.btnDecrease = new System.Windows.Forms.Button();
             this.PbMode = new System.Windows.Forms.Button();
             this.btnIncrease = new System.Windows.Forms.Button();
@@ -51,6 +54,9 @@
             this.checkBoxPosition = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -58,7 +64,7 @@
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(18, 116);
+            this.zedGraphControl1.Location = new System.Drawing.Point(18, 201);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
             this.zedGraphControl1.ScrollMaxX = 0D;
@@ -67,7 +73,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(1090, 522);
+            this.zedGraphControl1.Size = new System.Drawing.Size(1090, 437);
             this.zedGraphControl1.TabIndex = 0;
             // 
             // PbConnect
@@ -173,6 +179,12 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.txtKd);
+            this.groupBox3.Controls.Add(this.txtKi);
+            this.groupBox3.Controls.Add(this.txtKp);
             this.groupBox3.Controls.Add(this.txtSend);
             this.groupBox3.Controls.Add(this.btnDecrease);
             this.groupBox3.Controls.Add(this.PbSend);
@@ -182,10 +194,31 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(405, 23);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(451, 86);
+            this.groupBox3.Size = new System.Drawing.Size(451, 139);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Control";
+            // 
+            // txtKd
+            // 
+            this.txtKd.Location = new System.Drawing.Point(294, 99);
+            this.txtKd.Name = "txtKd";
+            this.txtKd.Size = new System.Drawing.Size(74, 20);
+            this.txtKd.TabIndex = 21;
+            // 
+            // txtKi
+            // 
+            this.txtKi.Location = new System.Drawing.Point(163, 99);
+            this.txtKi.Name = "txtKi";
+            this.txtKi.Size = new System.Drawing.Size(74, 20);
+            this.txtKi.TabIndex = 20;
+            // 
+            // txtKp
+            // 
+            this.txtKp.Location = new System.Drawing.Point(53, 99);
+            this.txtKp.Name = "txtKp";
+            this.txtKp.Size = new System.Drawing.Size(68, 20);
+            this.txtKp.TabIndex = 19;
             // 
             // btnDecrease
             // 
@@ -279,6 +312,33 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Kp :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(139, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Ki :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(258, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Kd :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +390,12 @@
         private System.Windows.Forms.Button btnDecrease;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.TextBox txtKd;
+        private System.Windows.Forms.TextBox txtKi;
+        private System.Windows.Forms.TextBox txtKp;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 
